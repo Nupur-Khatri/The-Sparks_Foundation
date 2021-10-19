@@ -42,7 +42,7 @@ df = pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
 print(df)
 
 # You can also test with your own data
-hours = 9.25
+hours = np.array([9.25]).reshape(1, 1)
 own_pred = regressor.predict(hours)
 print("No of Hours = {}".format(hours))
 print("Predicted Score = {}".format(own_pred[0]))
