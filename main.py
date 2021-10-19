@@ -47,5 +47,5 @@ own_pred = regressor.predict(hours)
 print("No of Hours = {}".format(hours))
 print("Predicted Score = {}".format(own_pred[0]))
 
-from sklearn import metrics  
+from sklearn import metrics   
 print('Mean Absolute Error:',metrics.mean_absolute_error(y_test, y_pred)) 
